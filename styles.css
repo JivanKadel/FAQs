@@ -1,0 +1,78 @@
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(48, 21, 52) 0%,rgb(48, 21, 52) 35%,rgb(249, 238, 255) 36%, rgb(249, 238, 255) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+main h1{
+    color: rgb(50, 18, 55);
+}
+main h1 i{
+    color: rgb(179, 38, 243);
+}
+main.faqs{
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+    background-color: white;
+    width :40%;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+main.faqs section{
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 2px solid lightblue;
+}
+.question{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.question button{
+    float: right;
+}
+.answer{
+    margin-right: 7%;
+    display: none;
+}
+.answer.show{
+    display: block;
+}
+/*
+rgb(48, 21, 52);
+rgb(249, 238, 255);
+*/
+button{
+    
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: none;  
+    color: white;
+    cursor: pointer;
+}
+button .fa-plus{
+    padding: 0.2rem;
+    background-color: rgb(179, 38, 243);
+    border-radius: 50%;
+}
+button .fa-minus{
+    padding: 0.2rem;
+    background-color: rgb(50, 18, 55);
+    border-radius: 50%;
+}
+
+@media(max-width: 850px){
+    main.faqs{
+        width: 50%;
+    }
+}
+@media(max-width: 600px){
+    main.faqs{
+        width: 70%;
+    }
+}
+
